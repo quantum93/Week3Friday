@@ -24,11 +24,19 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 This webpage utilizes jQuery and CSS styles. A user input is only number not words including special characters.
 
 ### Specs
-| Spec.                                                                     | Input   | Output                               |
-| :-------------------------------------------------------------------------| :------ | :----------------------------------- |
-| enter a number and repeat the number in html webpage                      | 5       | 5                                    |
-| The code returns a range of numbers from 0 to the users inputted number   | 5       | 0, 1, 2, 3, 4, 5                     |
-| For series of number, 1,2,3 is replaced with specific word                | 5       | 0, Beep!, Boop!, I'm sorry,~ , 4, 5  |
+| Spec.                                                                     | Input   | Output                                         |
+| :-------------------------------------------------------------------------| :------ | :--------------------------------------------- |
+| enter a number and repeat the number in html webpage                      | 5       | 5                                              |
+| The code returns a range of numbers from 0 to the users inputted number   | 5       | 0, 1, 2, 3, 4, 5                               |
+| For series of number, 1,2,3 is replaced with specific word                | 5       | 0, Beep!, Boop!, I'm sorry,~ , 4, 5            |
+| For series of number more than 9 ,                                        |         |                                                |
+| it is replaced number with the specific word                              | 10      | 0, Beep!, Boop!, 4, 5, ~ I'm sorry,~ 9, Beep!  |
+| For series of number more than 10,                                        |         |                                                |
+| it is replaced number with the specific word                              | 11      | 0, Beep!, Boop!, 4, 5, ~ I'm sorry,~ 9, Beep!  |
+| For series of number more than 11,                                        |         | Beep!                                          |
+| it is replaced number with the specific word                              | 12      | 0, ~~~~~~ 8, 9, Beep!, Beep!, Boop!            |
+| For series of number more than 12,                                        |         |                                                |
+| it is replaced number with the specific word                              | 13      | 0, ~~~ 8, 9, Beep!, Beep!, Boop!, I'm sorry ~  |
 
 
 ...
