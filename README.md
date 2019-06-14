@@ -24,7 +24,6 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 This webpage utilizes jQuery and CSS styles. A user input is only number not words including special characters.
 
 ### Specs
-| ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Spec.                                                             | Input                            | Output                                    |
 | :---------------------------------------------------------------- | :------------------------------- | :---------------------------------------- |
 | enter a number and repeat the number in html webpage              | 5                                | 5                                         |
