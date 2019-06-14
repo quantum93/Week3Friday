@@ -1,7 +1,8 @@
-// --------------------- Back-end Logic -------------------------
-
+// --------------------- Back-end Logic ----------------------------------------
 var words = ["Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that!"];
-var beepboop = function(number) {
+
+// --------------------- Beep-Boop application ---------------------------------
+var beepboop = function(number, name) {
   var numberArray = [];
   for (var i = 0; i <= number; i++) {
     numberArray[i] = i;
@@ -16,17 +17,20 @@ var beepboop = function(number) {
     for (var j = 0; j < singleNumber.length; j++) {
       numberChar.push(singleNumber.slice(j, j + 1));
       // console.log("numberChar is " + numberChar);
-      if (numberChar.includes("3") === true) {
-        wordArray[i] = words[2] + "...";
+      if (numberArray[i] % 3 === 0 && numberArray[i] != 0) {
+        wordArray[i] = words[2].toString().replace(/Dave/, name);
+      }
+      else if (numberChar.includes("3") === true) {
+        wordArray[i] = words[2];
       }
       else if (numberChar.includes("3") != true && numberChar.includes("2") === true) {
-        wordArray[i] = words[1] + "~";
+        wordArray[i] = words[1];
       }
       else if (numberChar.includes("3") != true && numberChar.includes("2") !== true && numberChar.includes("1") === true) {
-        wordArray[i] = words[0] + "~";
+        wordArray[i] = words[0];
       }
       else {
-        wordArray[i] = i + "...";
+        wordArray[i] = i;
       }
     }
   }
@@ -34,28 +38,25 @@ var beepboop = function(number) {
   return wordArray;
 };
 
+// --------------------- Reverse Beep-Boop application -------------------------
+var reverse = function() {
 
-// --------------------- Front-end Logic -------------------------
+}
+// ---------------------------- Front-end Logic --------------------------------
 $(document).ready(function() {
   // This is for the beep-boop action
   $("form#beep-boop").submit(function(event) {
     event.preventDefault();
     var number = $("input#number").val();
-    var resultOne = beepboop(number);
-    $("#resultOne").text(resultOne);
+    var name = $("input#name").val();
+    var result = beepboop(number, name);
+    $("#result").text(result);
   });
   // This is for the reverse beep-boop action
-  $("form#beep-boop").submit(function(event) {
-    event.preventDefault();
-    var number = $("input#number").val();
-    var resultOne = beepboop(number);
-    $("#resultOne").text(resultOne);
-  });
-  // This is for the division by three action
-  $("form#beep-boop").submit(function(event) {
-    event.preventDefault();
-    var number = $("input#number").val();
-    var resultOne = beepboop(number);
-    $("#resultOne").text(resultOne);
-  });
+  // $("form#reverse-string").submit(function(event) {
+  //   event.preventDefault();
+  //   var string = $("input#string").val();
+  //   var resultThree = reverse(string);
+  //   $("#resultTwo").text(resultThree);
+  // });
 });

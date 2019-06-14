@@ -24,21 +24,25 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 This webpage utilizes jQuery and CSS styles. A user input is only number not words including special characters.
 
 ### Specs
-| Spec.                                                                     | Input   | Output                                         |
-| :-------------------------------------------------------------------------| :------ | :--------------------------------------------- |
-| enter a number and repeat the number in html webpage                      | 5       | 5                                              |
-| The code returns a range of numbers from 0 to the users inputted number   | 5       | 0, 1, 2, 3, 4, 5                               |
-| For series of number, 1,2,3 is replaced with specific word                | 5       | 0, Beep!, Boop!, I'm sorry,~ , 4, 5            |
-| For series of number more than 9 ,                                        |         |                                                |
-| it is replaced number with the specific word                              | 10      | 0, Beep!, Boop!, 4, 5, ~ I'm sorry,~ 9, Beep!  |
-| For series of number more than 10,                                        |         |                                                |
-| it is replaced number with the specific word                              | 11      | 0, Beep!, Boop!, 4, 5, ~ I'm sorry,~ 9, Beep!  |
-| For series of number more than 11,                                        |         | Beep!                                          |
-| it is replaced number with the specific word                              | 12      | 0, ~~~~~~ 8, 9, Beep!, Beep!, Boop!            |
-| For series of number more than 12,                                        |         |                                                |
-| it is replaced number with the specific word                              | 13      | 0, ~~~ 8, 9, Beep!, Beep!, Boop!, I'm sorry ~  |
-| For 21,                                                                   | 21      | 0, ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,Boop! |
-| For 32,                                                                   | 32      | 0, ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ I'm sorry ~  |
+| Spec.                                                                     | Input   | Output                                          |
+| :-------------------------------------------------------------------------| :------ | :---------------------------------------------- |
+| enter a number and repeat the number in html webpage                      | 5       | 5                                               |
+| The code returns a range of number from 0 to the users inputted number    | 5       | 0, 1, 2, 3, 4, 5                                |
+| For series of number, 1,2,3 is replaced with specific word                | 5       | 0, Beep!, Boop!, I'm sorry,~ , 4, 5             |
+| For series of number more than 9 ,                                        |         |                                                 |
+| it is replaced number with the specific word                              | 10      | 0, Beep!, Boop!, 4, 5, ~ I'm sorry,~ 9, Beep!   |
+| For series of number more than 10,                                        |         |                                                 |
+| it is replaced number with the specific word                              | 11      | 0, Beep!, Boop!, 4, 5, ~ I'm sorry,~ 9, Beep!   |
+| For series of number more than 11,                                        |         | Beep!                                           |
+| it is replaced number with the specific word                              | 12      | 0, ~~~~~~ 8, 9, Beep!, Beep!, Boop!             |
+| For series of number more than 12,                                        |         |                                                 |
+| it is replaced number with the specific word                              | 13      | 0, ~~~ 8, 9, Beep!, Beep!, Boop!, I'm sorry ~   |
+| For 21,                                                                   | 21      | 0, ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,Boop!  |
+| For 32,                                                                   | 32      | 0, ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ I'm sorry ~   |
+| enter number and name the return beep-boop result and name                | 0, bob  | 0, (0 is not divided by 3 intentionally)        |
+| enter number and name the return beep-boop result and name                | 13, bob | 0,Beep!,Boop!,bob,4,5,bob,7,8,bob,Beep!,Beep!,  |
+|                                                                           |         | bob,I'm sorry, Dave. I'm afraid I can't do that!|
+| enter number and name the return beep-boop result and name                | 5, bob  | 0,Beep!,Boop!,I'm sorry, Bob. I'm ~ that!,4,5   |
 
 ## Setup/Installation Requirements
 
