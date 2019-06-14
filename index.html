@@ -15,57 +15,64 @@
       <br>
       <form id="introduction">
         <div class="form-group">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </form>
-    </div>
-
-    <div class="jumbotron">
-      <h1>Beep Boop</h1>
-      <br>
-      <form id="beep-boop">
-        <div class="form-group">
-          <label for="number">Enter your number:</label>
-          <input id="number" type="number">
-        </div>
-        <!-- <button type="submit" class="btn">Translate!</button> -->
-        <br>
-        <div class="form-group">
-          <label for="name">Enter your name:</label>
-          <input id="name" type="name">
-        </div>
-        <button type="submit" class="btn">Translate!</button>
-        <br>
-      </form>
-      <br>
-      <div id="result">
-        <br>
+          <p>A webpage created with jQuery, CSS and HTML to replace numbers into some words based on rules.</p>
+          <p>The rules are:</p>
+            <ol>Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"</ol>
+            <ol>Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"</ol>
+            <ol>Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."</ol>
+          <p>The first exception will apply unless the second exception does, and the same with the second and third. For example, in this program,</p>
+            <ol>The number 13 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."</ol>
+            <ol>The number 21 should be replaced with "Boop".</ol>
+            <ol>The number 32 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."</ol>
+          <p>A user should be able to enter a new number and see new results over and over again.
+              Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "I'm Sorry...",4, 5</p>
+          <p>This webpage utilizes jQuery and CSS styles. A user input is only number not words including special characters.</p>
+          </div>
+        </form>
       </div>
-    </div>
 
-    <div class="jumbotron">
+      <div class="jumbotron">
+        <h1>Beep Boop</h1>
+        <br>
+        <form id="beep-boop">
+          <div class="form-one">
+            <label for="number">Enter your number:</label>
+            <input id="number" type="number">
+          </div>
+          <!-- <button type="submit" class="btn">Translate!</button> -->
+          <br>
+          <div class="form-two">
+            <label for="name">Enter your name:</label>
+            <input id="name" type="name">
+          </div>
+          <button type="submit" class="btn">Translate!</button>
+          <br>
+        </form>
+        <br>
+        <div id="result">
+          <br>
+        </div>
+      </div>
+
+      <!-- <div class="jumbotron">
       <h1>Reverse Beep Boop</h1>
       <br>
       <form id="reverse-string">
-        <div class="form-group">
-          <label for="string">Enter your string:</label>
-          <input id="string" type="text">
-        </div>
-        <button type="submit" class="btn">Translate!</button>
-        <br>
-      </form>
-      <br>
-      <div id="resultTwo">
-        <br>
-      </div>
+      <div class="form-group">
+      <label for="string">Enter your string:</label>
+      <input id="string" type="text">
     </div>
+    <button type="submit" class="btn">Translate!</button>
+    <br>
+  </form>
+  <br>
+  <div id="resultTwo">
+  <br>
+</div>
+</div> -->
 
 
-  </div>
+</div>
 
 </body>
 </html>

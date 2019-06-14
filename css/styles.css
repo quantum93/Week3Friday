@@ -1,0 +1,28 @@
+h1 {
+  font-weight: bolder;
+}
+
+p {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+ol {
+  font-weight: bold;
+  color: red
+}
+
+.form-one {
+  background-color: pink
+}
+
+.form-two {
+  background-color: yellow
+}
+/* media part should be always the end of styles.css in order to work well with other css actions. */
+@media screen and (min-width: 768px) {
+  .column {
+    width: 300px;
+    float: left;
+    padding: 20px;
+  }
