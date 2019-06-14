@@ -10,24 +10,22 @@ var beepboop = function(number) {
   }
 
   var wordArray = [];
-  for (var i = 0; i <= numberArray.length; i++) {
+  for (var i = 0; i < numberArray.length; i++) {
     if (numberArray[i] === 1) {
-      numberArray[i] = wordOne;
+      wordArray[i] = wordOne;
     }
 
     else if (numberArray[i] === 2) {
-      numberArray[i] = wordTwo;
+      wordArray[i] = wordTwo;
     }
 
     else if (numberArray[i] === 3) {
-      numberArray[i] = wordThree;
+      wordArray[i] = wordThree;
     }
-
     else {
-      numberArray[i] = i;
+      wordArray[i] = i;
     }
   }
-
   return wordArray;
 };
 
