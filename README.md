@@ -37,10 +37,8 @@ This webpage utilizes jQuery and CSS styles. A user input is only number not wor
 | it is replaced number with the specific word                              | 12      | 0, ~~~~~~ 8, 9, Beep!, Beep!, Boop!            |
 | For series of number more than 12,                                        |         |                                                |
 | it is replaced number with the specific word                              | 13      | 0, ~~~ 8, 9, Beep!, Beep!, Boop!, I'm sorry ~  |
-
-
-...
-...
+| For 21,                                                                   | 21      | 0, ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,Boop! |
+| For 32,                                                                   | 32      | 0, ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ I'm sorry ~  |
 
 ## Setup/Installation Requirements
 
