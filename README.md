@@ -12,7 +12,7 @@ The rules are:
   Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
   Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."
 
-The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program,
+The first exception will apply unless the second exception does, and the same with the second and third. For example, in this program,
   The number 13 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   The number 21 should be replaced with "Boop".
   The number 32 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
@@ -24,9 +24,12 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 This webpage utilizes jQuery and CSS styles. A user input is only number not words including special characters.
 
 ### Specs
-| Spec.                                                             | Input                            | Output                                    |
-| :---------------------------------------------------------------- | :------------------------------- | :---------------------------------------- |
-| enter a number and repeat the number in html webpage              | 5                                | 5                                         |
+| Spec.                                                                     | Input   | Output                               |
+| :-------------------------------------------------------------------------| :------ | :----------------------------------- |
+| enter a number and repeat the number in html webpage                      | 5       | 5                                    |
+| The code returns a range of numbers from 0 to the users inputted number   | 5       | 0, 1, 2, 3, 4, 5                     |
+| For series of number, 1,2,3 is replaced with specific word                | 5       | 0, Beep!, Boop!, I'm sorry,~ , 4, 5  |
+
 
 ...
 ...
